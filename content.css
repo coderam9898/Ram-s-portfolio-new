@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.content{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.hero-info{
+    border: 2px solid rgb(81, 177, 37);
+    flex: 80%; 
+    padding: 50px;
+    /* background-color: green; */
+}
+.hero-image{
+    border: 2px solid rgb(26, 107, 199);
+    /* flex: 60%; */
+    /* background-color: green; */
+    height: 100%;
+    min-width: 450px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero-image img{
+    margin: 5%;
+    max-width: 300px;
+    max-height: 300px;
+    ;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: -10px 10px 15px gray;
+}
+@media only screen and (min-width:550px) {
+    /* For tablets: */
+    body{
+
+        background-color: green;
+
+    }
+    .content{
+        flex-direction: column;
+    }
+   
+  }
+@media only screen and (min-width:600px) {
+    /* For tablets: */
+    body{
+
+        background-color: green;
+
+    }
+    .content{
+        flex-direction: row;
+    }
+   
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    body{
+
+        background-color: rgb(40, 73, 180);
+    }
+  }
+  @media only screen and (max-width<600px) {
+    /* For desktop: */
+    body{
+
+        background-color: rgb(40, 73, 180);
+    }
+  }
